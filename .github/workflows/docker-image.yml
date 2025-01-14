@@ -15,7 +15,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag toddpratt/portfolio:1.$GITHUB_RUN_NUMBER
+      with:
+        arch: aarch64
+        distro: ubuntu_latest
+        run: docker build . --file Dockerfile --tag toddpratt/portfolio:1.$GITHUB_RUN_NUMBER
+  
     - name: Login to DockerHub
       uses: docker/login-action@v1
       with:
