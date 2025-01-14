@@ -27,4 +27,4 @@ jobs:
         context: .
         platforms: linux/arm64
         push: true
-        tags: toddpratt/portfolio:${{ GITHUB_RUN_NUMBER }}
+        tags: toddpratt/portfolio:${{ github.run_number }}
