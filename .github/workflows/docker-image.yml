@@ -23,4 +23,4 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Push image
-      run: docker push toddpratt/auth:1.$GITHUB_RUN_NUMBER
+      run: docker push toddpratt/portfolio:1.$GITHUB_RUN_NUMBER
