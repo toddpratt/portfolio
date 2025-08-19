@@ -1,0 +1,13 @@
+.container {
+    margin-top: 3em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.company {
+    font-size: 24px;
+}

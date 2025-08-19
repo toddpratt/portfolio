@@ -7,12 +7,14 @@ function Experience({experience}: {experience: IExperience}): JSX.Element {
         <li>{responsibility}</li>
     ))
     return (
-        <>
-            <div>{experience.company}</div>
-            <div>{experience.title}</div>
-            <div>{experience.from} - {experience.to}</div>
-            <div><ul>{responsibilities}</ul></div>
-        </>
+        <div className="container">
+            <header>
+                <div className="company">{experience.company}</div>
+                <div className="from-to">{experience.from} - {experience.to}</div>
+            </header>
+            <div className="title">{experience.title}</div>
+            <div className="responsibilities-container"><ul>{responsibilities}</ul></div>
+        </div>
     )
 }
 
