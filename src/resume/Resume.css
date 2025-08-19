@@ -1,5 +1,50 @@
-@media only screen and (max-width: 900px) {
-    .resume {
-        display: none;
-    }
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75);
+    min-width: 58em;
+    width: 70em;
+}
+
+.header {
+    background: #F8F7EF;
+    padding: 1em 2em;
+    border-radius: 5px 5px 0 0;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+.inner-container {
+    height: 100%;
+    display: flex;
+    overflow: auto;
+}
+
+.inner-nav {
+    padding: 2em 3em 1em 3em;
+    flex-shrink: 0;
+    background: lightcoral;
+    border-radius: 0 0 0 5px;
+}
+
+.inner-nav > * {
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+.viewport-container {
+    height: 100%;
+    flex-grow: 1;
+    overflow: auto;
+    border-radius: 0 0 5px 0;
+}
+
+.viewport {
+    background: #A2BAB9;
+    padding: 1em;
+    overflow: auto;
+    height: 100%;
 }

@@ -7,7 +7,7 @@ function Experience({experience}: {experience: IExperience}): JSX.Element {
         <li>{responsibility}</li>
     ))
     return (
-        <div className="container">
+        <div className="experience-container">
             <header>
                 <div className="company">{experience.company}</div>
                 <div className="from-to">{experience.from} - {experience.to}</div>

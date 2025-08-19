@@ -1,13 +1,16 @@
-.container {
-    margin-top: 3em;
+.experience-container {
+    margin: 2em 1em;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-
 }
 
 .company {
     font-size: 24px;
+}
+
+li {
+    list-style: none;
 }
