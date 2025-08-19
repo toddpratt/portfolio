@@ -60,8 +60,8 @@ const experiences: IExperience[] = [
         ]
     },
     {
-        company: "ITA Software by Google, Inc.",
-        title: "Software Engineer / Site Reliability Engineer",
+        company: "ITA Software, Inc.",
+        title: "Operations Programmer",
         from: "June 2008",
         to: "April 2011",
         responsibilities: [
