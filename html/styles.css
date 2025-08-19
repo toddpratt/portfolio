@@ -8,8 +8,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 75px;
-  margin-top: 50px;
+  margin-top: 4em;
 }
 
 @media only screen and (min-width: 900px) {
@@ -20,7 +19,7 @@ body {
     .tile-container {
         display: grid;
         grid-gap: 15px;
-        grid: 150px 150px / auto auto auto;
+        grid: 150px 150px 150px / auto auto auto;
     }
 
     .tile {
@@ -65,11 +64,12 @@ body {
 .title {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 .tile {
     transition: opacity 1s, transform 0.5s;
+    background: #fbdb79;
 }
 
 .tile:hover {
@@ -110,7 +110,3 @@ body {
     }
 }
 
-.photos-illustration {
-    margin-top: 50px;
-    width: 100%;
-}
