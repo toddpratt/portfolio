@@ -1,0 +1,52 @@
+
+a, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (min-width: 900px) {
+    .tile {
+        position: relative;
+        opacity: 0.4;
+        border: 2px solid gray;
+    }
+
+    .tile > a {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 62px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .tile {
+        display: inline-block;
+        text-align: center;
+        padding-top: 48px;
+        width: 125px;
+        height: 75px;
+        margin: 8px;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.tile {
+    transition: opacity 1s, transform 0.5s;
+    background: #fbdb79;
+}
+
+.tile:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
