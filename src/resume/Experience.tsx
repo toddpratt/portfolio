@@ -11,20 +11,22 @@ function Experience({experience}: {experience: IExperience}): JSX.Element {
     ));
     return (
         <>
-            <div className="experience-container">
-                <header>
-                    <div className="company">{experience.company}</div>
-                    <div className="from-to">{experience.from} - {experience.to}</div>
-                </header>
-                <div className="title">{experience.title}</div>
-                <div className="responsibilities-container">
-                    <ul>{responsibilities}</ul>
+            <div className="experience-outer-container">
+                <div className="experience-container">
+                    <header>
+                        <div className="company">{experience.company}</div>
+                        <div className="from-to">{experience.from} - {experience.to}</div>
+                    </header>
+                    <div className="title">{experience.title}</div>
+                    <div className="responsibilities-container">
+                        <ul>{responsibilities}</ul>
+                    </div>
                 </div>
-            </div>
-            <div className="skills-outer-container">
-                <h3>Skills</h3>
-                <div className="skills-container">
-                    {skills}
+                <div className="skills-outer-container">
+                    <h3>Skills</h3>
+                    <div className="skills-container">
+                        {skills}
+                    </div>
                 </div>
             </div>
         </>

@@ -26,7 +26,14 @@ function Resume({experiences}: {experiences: IExperience[]}): JSX.Element {
                 </h2>
                 <div className="inner-container">
                     <div className="inner-nav">
-                        {elements}
+                        <div>
+                            {elements}
+                        </div>
+                        <div className="education">
+                            <h4>Education</h4>
+                            <div className="degree">B.S. Information Technology</div>
+                            <div className="school">University of Massachusetts Lowell</div>
+                        </div>
                     </div>
                     <div className="viewport-container">
                         <div className="viewport">
