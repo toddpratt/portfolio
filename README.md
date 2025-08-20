@@ -8,6 +8,7 @@ The resume content is **data-driven**, defined in [`resume/types.ts`](./src/resu
 ## ✨ Features
 - ⚛️ **React + TypeScript** — modern, type-safe frontend stack.
 - 🗂 **Data-driven resume** — content lives in TypeScript, not hard-coded JSX.
+- 📱 **Responsive design** — looks good on desktop and mobile.
 - 🐳 **Dockerized** — reproducible builds with a single `Dockerfile`.
 - 🤖 **CI/CD with GitHub Actions** — builds and tests run automatically on every commit.
 - 🎨 **Customizable** — easy to change styles, colors, and layout.
