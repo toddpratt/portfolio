@@ -13,7 +13,7 @@ function Resume({experiences}: {experiences: IExperience[]}): JSX.Element {
         }
     }
     const elements = experiences.map((exp: IExperience) => (
-        <h3 key={exp.company} onClick={doClick(exp)}>{exp.company}</h3>
+        <h3 key={exp.company} onClick={doClick(exp)}>{exp.shortName}</h3>
     ));
     const experience = (
         <Experience experience={stateExperience} />
@@ -26,7 +26,7 @@ function Resume({experiences}: {experiences: IExperience[]}): JSX.Element {
                 </h2>
                 <div className="inner-container">
                     <div className="inner-nav">
-                        <div>
+                        <div className="experiences">
                             {elements}
                         </div>
                         <div className="education">

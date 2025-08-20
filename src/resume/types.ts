@@ -1,6 +1,7 @@
 
 export interface IExperience {
     company: string;
+    shortName: string;
     title: string;
     from: string;
     to: string;
@@ -11,6 +12,7 @@ export interface IExperience {
 export const experiences: IExperience[] = [
     {
         company: "Cigent Technology, Inc.",
+        shortName: "Cigent",
         title: "Software Engineer, DevOps Engineer",
         from: "November 2019",
         to: "Present",
@@ -45,6 +47,7 @@ export const experiences: IExperience[] = [
     },
     {
         company: "Zoomi, Inc.",
+        shortName: "Zoomi",
         title: "Software Engineer",
         from: "August 2017",
         to: "November 2019",
@@ -72,6 +75,7 @@ export const experiences: IExperience[] = [
     },
     {
         company: "Mirror Image Internet, Inc.",
+        shortName: "Mirror Image",
         title: "Software Engineer",
         from: "February 2017",
         to: "June 2017",
@@ -94,6 +98,7 @@ export const experiences: IExperience[] = [
     },
     {
         company: "Google, Inc.",
+        shortName: "Google",
         title: "Software Engineer, Tools and Infrastructure",
         from: "April 2014",
         to: "January 2017",
@@ -115,6 +120,7 @@ export const experiences: IExperience[] = [
     },
     {
         company: "ITA Software by Google, Inc.",
+        shortName: "Google",
         title: "Software Engineer / Site Reliability Engineer",
         from: "April 2011",
         to: "April 2014",
@@ -134,6 +140,7 @@ export const experiences: IExperience[] = [
     },
     {
         company: "ITA Software, Inc.",
+        shortName: "ITA",
         title: "Operations Programmer",
         from: "June 2008",
         to: "April 2011",
