@@ -13,7 +13,7 @@ function Resume({experiences}: {experiences: IExperience[]}): JSX.Element {
         }
     }
     const elements = experiences.map((exp: IExperience) => (
-        <h3 onClick={doClick(exp)}>{exp.company}</h3>
+        <h3 key={exp.company} onClick={doClick(exp)}>{exp.company}</h3>
     ));
     const experience = (
         <Experience experience={stateExperience} />

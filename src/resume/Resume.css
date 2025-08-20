@@ -10,7 +10,7 @@
 }
 
 .header {
-    background: #F8F7EF;
+    background: #DC2626;
     padding: 1em 2em;
     border-radius: 5px 5px 0 0;
     font-family: sans-serif;
@@ -26,7 +26,7 @@
 .inner-nav {
     padding: 2em 3em 1em 3em;
     flex-shrink: 0;
-    background: lightcoral;
+    background: #E5E7EB;
     border-radius: 0 0 0 5px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .viewport {
-    background: #A2BAB9;
+    background: antiquewhite;
     padding: 1em;
     overflow: auto;
     height: 100%;
