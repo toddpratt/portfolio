@@ -27,4 +27,4 @@ jobs:
         context: .
         platforms: linux/amd64
         push: true
-        tags: toddpratt/portfolio:10
+        tags: toddpratt/portfolio:11

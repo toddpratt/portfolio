@@ -1,8 +1,9 @@
 import './App.css'
-import Resume from './resume/Resume.tsx'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {experiences} from "./resume/types.ts";
+import GithubActivity from "./github/GithubActivity.tsx";
+import Resume from "./resume/Resume.tsx";
 
 function App() {
     return (
@@ -20,13 +21,9 @@ function App() {
                             <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> LinkedIn
                         </a>
                     </div>
-                    <div className="link">
-                        <a target="_blank" href="https://github.com/toddpratt/portfolio" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> Resume Repo
-                        </a>
-                    </div>
                 </div>
-                <div className="outer-viewport">
+                <div className="viewport">
+                    <GithubActivity />
                     <Resume experiences={experiences} />
                 </div>
             </div>

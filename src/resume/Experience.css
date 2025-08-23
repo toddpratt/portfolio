@@ -23,6 +23,10 @@
 header {
     display: flex;
     justify-content: space-between;
+    background: #DC2626;
+    color: antiquewhite;
+    padding: 8px;
+    border-radius: 10px;
 }
 
 .company {
@@ -31,7 +35,7 @@ header {
 
 li {
     margin-top: 1em;
-    list-style: circle  none;
+    list-style: circle none;
 }
 
 .skills-outer-container {

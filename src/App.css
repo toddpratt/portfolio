@@ -21,15 +21,6 @@
     .outer-header > .link {
         margin-left: 3em;
     }
-
-    .outer-viewport {
-        display: flex;
-        justify-content: center;
-        flex-grow: 1;
-        overflow: auto;
-        background: #F9FAFB;
-        padding: 2em 3em;
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -50,4 +41,16 @@
         font-family: Serif, sans-serif;
         font-size: 1.5em;
     }
+}
+
+.outer-header a:link, a:visited, a:active {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.viewport {
+    max-width: 40em;
+    margin: 0 auto;
+    flex-grow: 1;
+    overflow-y: auto;
 }
