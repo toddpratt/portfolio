@@ -6,7 +6,7 @@ export default function Education(): JSX.Element {
         <div className="education-container">
             <h1>Education</h1>
             <h2 className="institution">University of Massachusetts Lowell</h2>
-            <h3 className="degree">Bachelor's of Science, Information Technology</h3>
+            <h3 className="degree">Bachelor of Science, Information Technology</h3>
             <h4 className="extra">Summa Cum Laude</h4>
         </div>
     )
