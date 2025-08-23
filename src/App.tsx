@@ -22,9 +22,11 @@ function App() {
                         </a>
                     </div>
                 </div>
-                <div className="viewport">
-                    <GithubActivity />
-                    <Resume experiences={experiences} />
+                <div className="scroll-zone">
+                    <div className="viewport">
+                        <GithubActivity />
+                        <Resume experiences={experiences} />
+                    </div>
                 </div>
             </div>
         </>
