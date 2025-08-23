@@ -7,6 +7,7 @@ import Education from "./Education.tsx";
 function Resume({experiences}: {experiences: IExperience[]}): JSX.Element {
     return (
         <>
+            <Education />
             <h1>Resume</h1>
             <div className="experiences-container">
                 {experiences.map((experience: IExperience, index: number) => (
@@ -15,7 +16,6 @@ function Resume({experiences}: {experiences: IExperience[]}): JSX.Element {
                     </div>
                 ))}
             </div>
-            <Education />
         </>
     )
 }
