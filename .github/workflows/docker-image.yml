@@ -27,15 +27,4 @@ jobs:
         context: .
         platforms: linux/amd64
         push: true
-        tags: toddpratt/portfolio:11
-
-    - name: Deploy on VM over SSH
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.VM_HOST }}
-        username: ${{ secrets.VM_USER }}
-        key: ${{ secrets.VM_SSH_KEY }}
-        port: 22
-        script: |
-          cd ~/traefik
-          docker compose up --pull always -Vd --remove-orphans
+        tags: toddpratt/portfolio:release
