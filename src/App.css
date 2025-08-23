@@ -48,9 +48,12 @@
     color: antiquewhite;
 }
 
+.scroll-zone {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
 .viewport {
     max-width: 40em;
     margin: 0 auto;
-    flex-grow: 1;
-    overflow-y: auto;
 }
