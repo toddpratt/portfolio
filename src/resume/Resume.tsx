@@ -2,6 +2,7 @@ import "./Resume.css"
 import type {JSX} from "react";
 import type {IExperience} from "./types.ts";
 import Experience from "./Experience.tsx";
+import Education from "./Education.tsx";
 
 function Resume({experiences}: {experiences: IExperience[]}): JSX.Element {
     return (
@@ -14,6 +15,7 @@ function Resume({experiences}: {experiences: IExperience[]}): JSX.Element {
                     </div>
                 ))}
             </div>
+            <Education />
         </>
     )
 }
