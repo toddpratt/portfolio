@@ -11,7 +11,7 @@ export default function GithubActivity() {
         fetch("https://api.github.com/users/toddpratt/events")
             .then(res => res.json())
             .then(async data => {
-                const pushEvents = data.filter(e => e.type === "PushEvent");
+                const pushEvents = data.filter((e: any) => e.type === "PushEvent");
                 const filtered: {[key: string]: any[]} = {};
 
                 for (const event of pushEvents) {
