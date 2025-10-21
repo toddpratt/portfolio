@@ -10,26 +10,33 @@ export default function GithubActivity() {
     useEffect(() => {
         fetch("https://api.github.com/users/toddpratt/events")
             .then(res => res.json())
-            .then(data => {
-                const filtered = data.filter(
-                    (e: any) => e.type === "PushEvent"
-                ).reduce(
-                    (acc: any, event: any) => {
-                        if (acc[event.repo.name] == undefined) {
-                            acc[event.repo.name] = [];
-                        }
-                        acc[event.repo.name].push(...event.payload.commits);
-                        return acc;
-                    }, {}
-                );
-                setRepos(filtered); // limit to 5 latest
+            .then(async data => {
+                const pushEvents = data.filter(e => e.type === "PushEvent");
+                const filtered: {[key: string]: any[]} = {};
+
+                for (const event of pushEvents) {
+                    const repoName: string = event.repo.name;
+                    const before = event.payload.before;
+                    const head = event.payload.head;
+
+                    // Fetch commits using the Compare API
+                    const compareUrl = `https://api.github.com/repos/${repoName}/compare/${before}...${head}`;
+                    const compareRes = await fetch(compareUrl);
+                    const compareData = await compareRes.json();
+
+                    if (!filtered[repoName]) {
+                        filtered[repoName] = [];
+                    }
+                    filtered[repoName].push(...compareData.commits);
+                }
+
+                setRepos(filtered);
                 setLoading(false);
             })
             .catch(() => setLoading(false));
     }, []);
 
     if (loading) return <p>Loading GitHub activity...</p>;
-    console.log(repos);
     return (
         <div className="github-activity">
             <h1>Github Activity</h1>
