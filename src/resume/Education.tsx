@@ -3,11 +3,13 @@ import type {JSX} from "react";
 
 export default function Education(): JSX.Element {
     return (
-        <div className="education-container">
-            <h1>Education</h1>
-            <h2 className="institution">University of Massachusetts Lowell</h2>
-            <h3 className="degree">Bachelor of Science, Information Technology</h3>
-            <h4 className="extra">Summa Cum Laude</h4>
-        </div>
+        <section className="education-section">
+            <h2 className="section-title">Education</h2>
+            <div className="education-card">
+                <h3 className="institution">University of Massachusetts Lowell</h3>
+                <p className="degree">Bachelor of Science, Information Technology</p>
+                <p className="extra">Summa Cum Laude</p>
+            </div>
+        </section>
     )
 }

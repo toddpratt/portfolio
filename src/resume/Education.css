@@ -1,21 +1,23 @@
-.education-container h2 {
-    margin-left: 1em;
-    margin-top: 1em;
+.education-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25em 1.5em;
 }
 
-.education-container h3 {
-    margin-left: 2em;
+.institution {
+    font-size: 1.15em;
+    font-weight: 600;
 }
 
-.education-container h4 {
-    margin-left: 3em;
+.degree {
+    margin-top: 0.2em;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.extra {
+    margin-top: 0.4em;
+    color: var(--text-muted);
     font-style: italic;
-    margin-bottom: 4em;
 }
-
-@media only screen and (max-width: 600px) {
-    .education-container h2, h3, h4 {
-        font-size: 90%;
-    }
-}
-

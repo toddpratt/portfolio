@@ -11,11 +11,35 @@ export interface IExperience {
 
 export const experiences: IExperience[] = [
     {
+        company: "IntelliThreat AI / Blueshift Cybersecurity",
+        shortName: "Intellithreat",
+        title: "Senior Developer",
+        from: "January 2026",
+        to: "Present",
+        responsibilities: [
+            "Built out Gitlab CI for tests and image builds.",
+            "Worked on Langgraph/Langchain LLM workflows.",
+            "Deployed monitoring solutions for capturing and alerting on exceptions and outages.",
+            "Hardening of public facing customer portal.",
+        ],
+        skills: [
+            "CI/CD (Gitlab)",
+            "Docker",
+            "Linux",
+            "Python",
+            "FastAPI",
+            "Langgraph/Langchain",
+            "Postgres",
+            "Local AI (ollama, llama-server)",
+            "Git",
+        ],
+    },
+    {
         company: "Cigent Technology, Inc.",
         shortName: "Cigent",
         title: "Software Engineer, DevOps Engineer",
         from: "November 2019",
-        to: "Present",
+        to: "December 2025",
         responsibilities: [
             "Designed and implemented automated infrastructure provisioning with Ansible and Terraform, bringing repeatability and confidence and reducing deployment time and effort.",
             "Introduced blue-green deployment strategy and CI/CD pipelines (Jenkins), improving release frequency and system reliability.",

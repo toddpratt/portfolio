@@ -8,14 +8,16 @@ function Resume({experiences}: {experiences: IExperience[]}): JSX.Element {
     return (
         <>
             <Education />
-            <h1>Resume</h1>
-            <div className="experiences-container">
-                {experiences.map((experience: IExperience, index: number) => (
-                    <div className="experience" key={index}>
-                        <Experience experience={experience} />
-                    </div>
-                ))}
-            </div>
+            <section className="experience-section">
+                <h2 className="section-title">Experience</h2>
+                <ol className="timeline">
+                    {experiences.map((experience: IExperience, index: number) => (
+                        <li className="timeline-item" key={index}>
+                            <Experience experience={experience} />
+                        </li>
+                    ))}
+                </ol>
+            </section>
         </>
     )
 }
